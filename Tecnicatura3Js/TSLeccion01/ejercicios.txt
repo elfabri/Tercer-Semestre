@@ -1,0 +1,40 @@
+ - Ejercicio 1: Leer un número y mostrar su cuadrado, repetir
+el proceso hasta que se introduzca un número negativo
+
+ - Ejercicio 2: Leer un número e indicar si es positivo o
+negativo. El proceso se repetira hasta que se introduzca
+un cero 0
+
+ - Ejercicio 3: Leer números hasta que se introduzca un cero
+Para cada uno indicar si es par o impar.
+
+ - Ejercicio 4: Pedir números hasta que se teclee uno negativo,
+y mostrar cuántos números se han introducido.
+
+ - Ejercicio 5: Realizar un juego para adivinar un número,
+para ello generar un número aleatorio entre 0-100, y
+luego ir pidiendo números indicando "es mayor" o
+"es menor" según sea mayor o menor con respecto a N
+El proceso termina cuando el usuario acierta y mostramos
+el número de intentos hechos.
+
+ - Ejercicio 6: Pedir números hasta que se teclee un 0, mostrar
+la suma de todos los números introducidos.
+
+ - Ejercicio 7: Pedir números hasta que se introduzca uno negativo
+y calcular el promedio
+
+ - Ejercicio 8: Pedir un número N, y mostrar todos los números
+del 1 al N.
+
+ - Ejercicio 9: Pedir el día, mes y año de una fecha e
+indicar si la fecha es correcta. Suponiendo que 
+todos los meses son de 30 días.
+
+ - Ejercicio 10: Pedir 10 números y escribir la suma
+total
+
+ - Ejercicio 11: Diseñar un programa que muestre el producto
+de los 10 primeros números impares
+
+ - Ejercicio 12: Pedir un número y calcular su factorial
