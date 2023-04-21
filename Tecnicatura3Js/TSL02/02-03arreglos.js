@@ -27,3 +27,8 @@ console.log(autos);
 // Tercera forma de agregar elementos tenendo cuidado
 autos[6] = "Renault";
 console.log(autos); // No tira error sino que rellena con undefined
+
+// Cómo preguntar si es un array
+console.log(Array.isArray(autos));
+
+console.log(autos instanceof Array);
