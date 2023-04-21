@@ -1,8 +1,0 @@
-# excluyendo archivos creados por maven que no voy a necesitar
-/.settings/*
-.classpath
-.project
-/target/generated-resources/*
-/target/maven-status/*
-/target/test-classes/*
-/src/test/*
