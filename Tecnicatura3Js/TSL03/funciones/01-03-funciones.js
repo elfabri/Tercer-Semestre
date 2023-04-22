@@ -38,3 +38,8 @@ miFuncionDos(5, 7);
 var miFuncionTexto = miFuncionDos.toString();
 console.log(miFuncionTexto); // transcribe la función a txt, no el retorno sino la declaración de
 // la función en sí, utilizando cosas raras
+
+// Funciones flecha 
+const sumarFuncionFlecha = (a, b) => a + b;
+resultado = sumarFuncionFlecha(3, 7);
+console.log(resultado);
