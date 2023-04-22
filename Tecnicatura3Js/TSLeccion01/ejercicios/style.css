@@ -1,0 +1,28 @@
+body {
+    background-color: #222222;
+    color: #dadada;
+}
+
+div {
+    margin: auto;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    color: #5566ba;
+}
+
+a:hover {
+    color: #b56677;
+}
+
+a:active {
+    color: #bababa;
+}
+
+a:visited {
+    color: #ba55ab;
+}
