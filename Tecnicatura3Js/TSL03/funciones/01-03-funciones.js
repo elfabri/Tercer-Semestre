@@ -43,3 +43,14 @@ console.log(miFuncionTexto); // transcribe la función a txt, no el retorno sino
 const sumarFuncionFlecha = (a, b) => a + b;
 resultado = sumarFuncionFlecha(3, 7);
 console.log(resultado);
+
+// en js, la cantidad de parámetros puede ser menor a los argumentos
+// Función tipo expresión
+let sumar = function(a = 4, b = 8) {
+    console.log(arguments[0]); // ignora los valores por defecto
+    console.log(arguments[1]);
+    return a + b + arguments[2];
+}
+
+resultado = sumar(3, 2, 9);
+console.log(resultado);
