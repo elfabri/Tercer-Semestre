@@ -15,3 +15,9 @@ console.log(resultado);
 let x = function(a, b) { return a + b };
 resultado = x(5, 6);
 console.log(resultado);
+
+// Funciones de tipo self e invoking
+(function(a, b) {
+    console.log("Ejecutando la función: " + (a + b));
+})(9, 6); // no tiene nombre, no se puede volver a llamar
+// se manda a llamar a sí misma con los arg al final
