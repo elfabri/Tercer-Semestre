@@ -7,3 +7,6 @@
 /Tecnicatura3Java/*/*/target/maven-status/*
 /Tecnicatura3Java/*/*/target/test-classes/*
 /Tecnicatura3Java/*/*/src/test/*
+
+# python venv
+/Tecnicatura3Py/L04/pruebaPGSQL/*
