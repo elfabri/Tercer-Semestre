@@ -1,2 +1,12 @@
+# excluyendo archivos creados por maven que no voy a necesitar
+
+/Tecnicatura3Java/*/*/.settings/*
+/Tecnicatura3Java/*/*/.classpath
+/Tecnicatura3Java/*/*/.project
+/Tecnicatura3Java/*/*/target/generated-resources/*
+/Tecnicatura3Java/*/*/target/maven-status/*
+/Tecnicatura3Java/*/*/target/test-classes/*
+/Tecnicatura3Java/*/*/src/test/*
+
 # python venv
 /Tecnicatura3Py/L04/pruebaPGSQL/*
