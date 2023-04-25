@@ -13,4 +13,11 @@ sentencia = 'SELECT * FROM persona'
 
 cursor.execute(sentencia)
 
+# Registramos datos
 registros = cursor.fetchall()
+
+print(registros)
+
+# Cerramos conexión
+cursor.close()
+conexion.close()
