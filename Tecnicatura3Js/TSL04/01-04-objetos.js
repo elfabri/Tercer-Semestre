@@ -19,3 +19,10 @@ console.log(persona.email);
 console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreCompleto());
+
+// Otra forma de crear objetos
+let persona2 = new object();
+persona2.nombre = "Juana";
+persona2.direccion = "Asdf 4321";
+persona2.telefono = "939393969";
+console.log(persona.telefono);
