@@ -47,3 +47,24 @@ console.log("cambiamos y elimamos un error");
 persona.apellide = "U"; // Creación erronea de nueva propiedad
 delete persona.apellide; // Eliminación del error anteriore
 console.log(persona);
+
+// Distintas formas de imprimir un objeto
+// Número 1: concatenar propiedades
+console.log("Distintas formas de imprimir un objeto: 1");
+console.log(persona.nombre + ", " + persona.apellido);
+
+// Número 2: for in
+console.log("Distintas formas de imprimir un objeto: 2");
+for (propiedad in persona) {
+    console.log(persona[propiedad]);
+}
+
+// Número 3: Object.value()
+console.log("Distintas formas de imprimir un objeto: 3");
+let personaArray = Object.values(persona);
+console.log(personaArray);
+
+// Número 4: JSON.stringify
+console.log("Distintas formas de imprimir un objeto: 4");
+let personaString = JSON.stringify(persona);
+console.log(personaString);
