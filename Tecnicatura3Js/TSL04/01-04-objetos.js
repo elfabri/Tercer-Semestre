@@ -26,3 +26,11 @@ persona2.nombre = "Juana";
 persona2.direccion = "Asdf 4321";
 persona2.telefono = "939393969";
 console.log(persona.telefono);
+
+// Acceso a las propiedades de los objetos
+console.log(persona["apellido"]);
+
+for(propiedad in persona) {
+    console.log(propiedad); // nombre, apellido ...
+    console.log(persona[propiedad]); // Carlos, A ...
+}
