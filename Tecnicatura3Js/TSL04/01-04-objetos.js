@@ -2,6 +2,8 @@ let x = 10;
 
 console.log(x.length); // undefined
 
+console.log(" Tipaso");
+
 // Objeto
 let persona = {
     nombre: 'Carlos',
@@ -20,23 +22,28 @@ console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreCompleto());
 
+console.log("Ejecutando con un obj");
 // Otra forma de crear objetos
-let persona2 = new object();
+let persona2 = new Object();
 persona2.nombre = "Juana";
 persona2.direccion = "Asdf 4321";
 persona2.telefono = "939393969";
-console.log(persona.telefono);
+console.log(persona2.telefono);
 
 // Acceso a las propiedades de los objetos
 console.log(persona["apellido"]);
+
+console.log("Usamos el for in");
 
 for(propiedad in persona) {
     console.log(propiedad); // nombre, apellido ...
     console.log(persona[propiedad]); // Carlos, A ...
 }
 
+console.log("cambiamos y elimamos un error");
+
 // agregar o eliminar propiedades
 //persona.apellido = "Beta"; // Cambio dinámico del valor de un objeto
 persona.apellide = "U"; // Creación erronea de nueva propiedad
 delete persona.apellide; // Eliminación del error anteriore
-console.log(persona.apellido);
+console.log(persona);
