@@ -34,3 +34,9 @@ for(propiedad in persona) {
     console.log(propiedad); // nombre, apellido ...
     console.log(persona[propiedad]); // Carlos, A ...
 }
+
+// agregar o eliminar propiedades
+//persona.apellido = "Beta"; // Cambio dinámico del valor de un objeto
+persona.apellide = "U"; // Creación erronea de nueva propiedad
+delete persona.apellide; // Eliminación del error anteriore
+console.log(persona.apellido);
