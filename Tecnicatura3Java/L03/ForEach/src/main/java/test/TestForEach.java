@@ -1,4 +1,7 @@
 package test;
+
+import domain.Persona;
+
 public class TestForEach {
     public static void main( String[] args ) {
 
@@ -13,6 +16,13 @@ public class TestForEach {
         // Ya no tenemos acceso al índice
         for (int edad: edades) {
             System.out.println("edad = " + edad);
+        }
+
+        // probando con clases externas
+        Persona personas[] = {new Persona("Juana"), new Persona("Carla"), new Persona("Marta")};
+
+        for(Persona persona: personas) {
+            System.out.println("persona = " + persona);
         }
     }
 }
