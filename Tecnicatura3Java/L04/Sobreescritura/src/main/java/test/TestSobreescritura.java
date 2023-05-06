@@ -8,12 +8,13 @@ public class TestSobreescritura {
         imprimir(empleado1);
         // System.out.println("empleado1: " + empleado1.obtenerDetalles());
 
-        Gerente gerente1 = new Gerente("Josefína", 5000, "Sistemas");
-        imprimir(gerente1); // Entra como tipo empleado gracias a la herencia con la clase Empleado
+        empleado1 = new Gerente("Josefína", 5000, "Sistemas");
+        imprimir(empleado1); // Entra como tipo empleado gracias a la herencia con la clase Empleado
         // System.out.println("gerente1: " + gerente1.obtenerDetalles());
     }
 
     public static void imprimir(Empleado empleado) {
-        System.out.println("Empleado: " + empleado.obtenerDetalles());
+        String detalles = empleado.obtenerDetalles();
+        System.out.println("Detalles: " + detalles);
     }
 }
