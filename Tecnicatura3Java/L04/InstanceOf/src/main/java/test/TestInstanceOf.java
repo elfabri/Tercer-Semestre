@@ -5,9 +5,10 @@ import domain.*;
 public class TestInstanceOf {
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("Juanita", 10000);
-        determinarTipo(empleado1);
+        // determinarTipo(empleado1);
 
         empleado1 = new Gerente("Josefína", 5000, "Sistemas");
+        determinarTipo(empleado1);
     }
 
     public static void determinarTipo(Empleado empleado) {
