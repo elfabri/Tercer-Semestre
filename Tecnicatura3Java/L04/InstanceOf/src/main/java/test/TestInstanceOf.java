@@ -16,6 +16,7 @@ public class TestInstanceOf {
             System.out.println("Es de tipo Gerente");
             // empleado.getDepartamento(); // no se puede
             ((Gerente) empleado).getDepartamento(); // Conversión de tipos
+            System.out.println(((Gerente) empleado).getDepartamento());
             // Otra forma es definir nueva variable del tipo conveniente
             // Gerente gerente = (Gerente) empleado;
             // gerente.getDepartamento();
