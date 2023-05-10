@@ -91,10 +91,18 @@ function Persona3(nombre, apellido, email) { // construtor
     this.nombre = nombre;
     this.apellido = apellido;
     this.email = email;
+
+    this.nombreCompleto = function() {
+        return this.nombre + ' ' + this.apellido;
+    }
 }
 
 let padre = new Persona3("Laura", "Amp", "dsa@asd.com");
+padre.nomre = "Emilia";
 console.log(padre);
+
+console.log(padre.nombreCompleto());
 
 let madre = new Persona3("Camila", "Casp", "fdsa@asd.com");
 console.log(madre);
+console.log(madre.nombreCompleto());
