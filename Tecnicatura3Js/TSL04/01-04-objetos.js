@@ -9,7 +9,14 @@ let persona = {
     nombre: 'Carlos',
     apellido: 'A',
     email: 'a@a.a',
-    edad: 3,
+    edad: 2,
+    idioma: "ES",
+    get lang() {
+        return this.idioma.toUpperCase();
+    },
+    set lang(lang) {
+        this.idioma = lang.toUpperCase();
+    },
     nombreCompleto: function() {
         return this.nombre + " " + this.apellido;
     },
@@ -75,3 +82,7 @@ console.log(personaString);
 // Clase 05 - GET
 console.log("Comenzamos a utilizar el método get");
 console.log(persona.nombreEdad);
+
+console.log("Comenzamos con el método get para idiomas");
+persona.lang = "en";
+console.log(persona.lang);
