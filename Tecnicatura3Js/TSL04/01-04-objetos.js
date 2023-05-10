@@ -146,3 +146,21 @@ console.log(padre.telefono); // predomina el número asignado a padre
 console.log(madre.telefono); // predomina el número por defecto
 madre.telefono = "542069420";
 console.log(madre.telefono); // predomina el número asignado anteriormente
+
+// Uso de call
+// usamos métodos definidos en otros objetos, en otros objetos
+let persona4 = {
+    nombre: "Juana",
+    apellido: "Anauj",
+    nombreCompleto2: function(titulo, telefono) {
+        return titulo + ": " + this.nombre + ' ' + this.apellido + ' ' + telefono;
+    }
+}
+
+let persona5 = {
+    nombre: "Carla",
+    apellido: "Alrac"
+}
+
+console.log(persona4.nombreCompleto2("Lic.", "2424242"));
+console.log(persona4.nombreCompleto2.call(persona5, "Ing.", "1313131313"));
