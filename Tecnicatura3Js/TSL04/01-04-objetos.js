@@ -106,3 +106,34 @@ console.log(padre.nombreCompleto());
 let madre = new Persona3("Camila", "Casp", "fdsa@asd.com");
 console.log(madre);
 console.log(madre.nombreCompleto());
+
+// Diferentes formas de crear objetos
+// Caso Objeto 1
+let miObjeto = new Object();
+// Caso Objeto 2
+let miObjeto2 = {}; // Recomendada
+
+// Caso String 1
+let miCadena1 = new String("Hola");
+// Caso String 2
+let miCadena2 = "Hola"; // Recomendada
+
+// Caso con números 1
+let miNumero = new Number(1);
+// Caso con números 2
+let miNumero2 = 1; // Recomendada
+
+// Caso Boolean 1
+let miB = new Boolean(false);
+// Caso Boolean 2
+let miB2 = false; // Recomendada
+
+// Caso Arreglos 1
+let miA = new Array();
+// Caso Arreglos 2
+let miA2 = []; // Recomendada
+
+// Caso Function 1
+let miF1 = new function(){};
+// Caso Function 2
+let miF2 = function(){}; // Recomendada
