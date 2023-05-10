@@ -99,6 +99,7 @@ function Persona3(nombre, apellido, email) { // construtor
 
 let padre = new Persona3("Laura", "Amp", "dsa@asd.com");
 padre.nomre = "Emilia";
+padre.telefono = "42069"; // Solo para objeto padre
 console.log(padre);
 
 console.log(padre.nombreCompleto());
@@ -137,3 +138,11 @@ let miA2 = []; // Recomendada
 let miF1 = new function(){};
 // Caso Function 2
 let miF2 = function(){}; // Recomendada
+
+// Uso de prototype
+// da una nueva propiedad a todos los objetos creados
+Persona3.prototype.telefono = "69420"; // valor por defecto
+console.log(padre.telefono); // predomina el número asignado a padre
+console.log(madre.telefono); // predomina el número por defecto
+madre.telefono = "542069420";
+console.log(madre.telefono); // predomina el número asignado anteriormente
