@@ -152,8 +152,8 @@ console.log(madre.telefono); // predomina el número asignado anteriormente
 let persona4 = {
     nombre: "Juana",
     apellido: "Anauj",
-    nombreCompleto2: function(titulo, telefono) {
-        return titulo + ": " + this.nombre + ' ' + this.apellido + ' ' + telefono;
+    nombreCompleto2: function(tit, tel) {
+        return tit + ": " + this.nombre + ' ' + this.apellido + ' ' + tel;
     }
 }
 
@@ -162,5 +162,10 @@ let persona5 = {
     apellido: "Alrac"
 }
 
-console.log(persona4.nombreCompleto2("Lic.", "2424242"));
-console.log(persona4.nombreCompleto2.call(persona5, "Ing.", "1313131313"));
+console.log(persona4.nombreCompleto2("Lic.", "12341234"));
+console.log(persona4.nombreCompleto2.call(persona5, "Ing.", "12341234"));
+
+// Método Apply - es como call pero difiere al pasar parámetros
+// aplica arrays
+let arreglo = ["Ing.", "12341234"];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
