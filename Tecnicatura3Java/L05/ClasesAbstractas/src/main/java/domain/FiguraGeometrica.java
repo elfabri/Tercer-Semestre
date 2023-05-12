@@ -8,7 +8,7 @@ public abstract class FiguraGeometrica {
     }
 
     // La clase padre no define comportamiento
-    abstract void dibujar(); 
+    public abstract void dibujar(); 
 
     public String getTipoFigura() {
         return tipoFigura;
