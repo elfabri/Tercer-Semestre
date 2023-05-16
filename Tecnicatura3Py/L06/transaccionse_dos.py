@@ -15,7 +15,7 @@ try:
     sentencia = """INSERT INTO persona(nombre, apellido, email)
     VALUES (%s, %s, %s)"""
 
-    valores = ("Marta", "Esparta", "abaa@asdf.com")
+    valores = ("Jorge", "Prol", "jprol@asdf.com")
 
     cursor.execute(sentencia, valores)
 
@@ -23,7 +23,7 @@ try:
     nombre = %s, apellido = %s, email = %s
     WHERE \"idPersona\" = %s;"""  # id_persona
 
-    valores = ("Juana", "Jota", "j@asdf.com", 1)
+    valores = ("Juan Carlos", "Perez", "j@asdf.com", 1)
 
     cursor.execute(sentencia, valores)
     conexion.commit()  # confirmamos transacción, cierra transacción
@@ -32,7 +32,7 @@ try:
 except Exception as e:
     conexion.rollback()  # en caso de error, se deshacen los cambios
     # de la transacción
-    print(f"Error - {e}")
+    print(f"Ocurrió un error y se hizo un rollback - Error: {e}")
 
 finally:
     # Cerramos conexión
