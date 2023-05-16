@@ -9,14 +9,17 @@ conexion = bd.connect(
 )
 
 try:
-    conexion.autocommit = False
+    conexion.autocommit = False  # Obliga hacer commits manuales
     cursor = conexion.cursor()
     sentencia = "INSERT INTO persona(nombre, apellido, email) VALUES (%s, %s, %s)"
     valores = ("María", "Esparta", "aaaa@asdf.com")
     cursor.execute(sentencia, valores)
+    conexion.commit()  # confirmamos transacción
     print("Termina la transacción")
 
 except Exception as e:
+    conexion.rollback()  # en caso de error, se deshacen los cambios
+    # de la transacción
     print(f"Error - {e}")
 
 finally:
