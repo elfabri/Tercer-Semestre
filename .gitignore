@@ -1,8 +1,8 @@
 # python venv
 /Tecnicatura3Py/L04/pruebaPGSQL/*
 /Tecnicatura3Py/L05/pruebaPGSQL/*
-/Tecnicatura3Py/L06/Pipfile
-/Tecnicatura3Py/L06/Pipfile.lock
+/Tecnicatura3Py/*/Pipfile
+/Tecnicatura3Py/*/Pipfile.lock
 
 # excluyendo archivos creados por maven que no voy a necesitar
 /Tecnicatura3Java/*/*/.settings/*
