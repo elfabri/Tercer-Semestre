@@ -28,6 +28,10 @@ class Persona {
     nombreCompleto() {
         return this._nombre + ' ' + this._apellido;
     }
+
+    toString() {
+        return this.nombreCompleto();
+    }
 }
 
 class Empleado extends Persona {
@@ -68,3 +72,4 @@ console.log(persona2.nombre + persona2.apellido);
 let empleado1 = new Empleado("María", "E", "Sistemas");
 console.log(empleado1);
 console.log(empleado1.nombreCompleto());
+console.log(empleado1.toString());
