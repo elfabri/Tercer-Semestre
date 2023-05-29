@@ -3,3 +3,27 @@
 08:26:46 PM:WARNING [logger_base.py:15] Mensaje a nivel warning
 08:26:46 PM:ERROR [logger_base.py:16] Mensaje a nivel error
 08:26:46 PM:CRITICAL [logger_base.py:17] Mensaje a nivel critical
+07:28:06 PM:DEBUG [Persona.py:54] 
+            Id Persona: 1
+            Nombre: A
+            Apellido: B
+            Email: asdf@fdsa.com
+        
+07:35:00 PM:DEBUG [Persona.py:54] 
+            Id Persona: 1
+            Nombre: A
+            Apellido: B
+            Email: asdf@fdsa.com
+        
+07:35:00 PM:DEBUG [Persona.py:56] 
+            Id Persona: 2
+            Nombre: Dfg
+            Apellido: Abc
+            Email: jfjf@kdkd.com
+        
+07:35:00 PM:DEBUG [Persona.py:58] 
+            Id Persona: 3
+            Nombre: None
+            Apellido: None
+            Email: None
+        
