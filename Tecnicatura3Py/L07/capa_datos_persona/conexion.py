@@ -28,7 +28,7 @@ class Conexion:
             except Exception as e:
                 log.error(f"Error: {e}")
                 sys.exit()
-        else:
+        else:  # En este commit, arregló la identación de esto
             return cls._conexion
 
     @classmethod
@@ -41,7 +41,7 @@ class Conexion:
             except Exception as e:
                 log.error(f"Error: {e}")
                 sys.exit()
-        else:
+        else:  # En este commit, arregló la identación de esto
             return cls._cursor
 
 
