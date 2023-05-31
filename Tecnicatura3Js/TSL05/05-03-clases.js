@@ -8,10 +8,18 @@ class Persona {
     static contOP = 0;
     // email = "email-default";
 
+    static get MAX_OBJ() { // este método simula una const
+        return 5;
+    }
+
     constructor(nombre, apellido) {
         this._nombre = nombre;
         this._apellido = apellido;
-        this.idPersona = ++Persona.contOP;
+        if (Persona.contOP < Persona.MAX_OBJ) {
+            this.idPersona = ++Persona.contOP;
+        } else {
+            console.log("Superado cantidad de objetos permitidos");
+        }
         // console.log("Se incrementa el contador: " + Persona.contOP);
     }
 
@@ -115,3 +123,12 @@ console.log(Persona.contOP);
 let persona3 = new Persona("Carla", "Carlita");
 console.log(persona3.toString());
 console.log(Persona.contOP);
+
+console.log(Persona.MAX_OBJ);
+// Persona.MAX_OBJ = 10; // no se puede modificar
+console.log(Persona.MAX_OBJ);
+
+let persona4 = new Persona("Franco", "Blanco");
+console.log(persona4.toString());
+let persona5 = new Persona("Franca", "Blanca");
+console.log(persona5.toString());
