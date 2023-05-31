@@ -6,13 +6,13 @@
 class Persona {
 
     static contOP = 0;
-    email = "email-default";
+    // email = "email-default";
 
     constructor(nombre, apellido) {
         this._nombre = nombre;
         this._apellido = apellido;
-        Persona.contOP++;
-        console.log("Se incrementa el contador: " + Persona.contOP);
+        this.idPersona = ++Persona.contOP;
+        // console.log("Se incrementa el contador: " + Persona.contOP);
     }
 
     get nombre() {
@@ -32,7 +32,7 @@ class Persona {
     }
 
     nombreCompleto() {
-        return this._nombre + ' ' + this._apellido;
+        return this.idPersona + ', ' + this._nombre + ' ' + this._apellido;
     }
 
     // Sobreescribiendo método de la clase padre (object)
@@ -107,3 +107,7 @@ console.log(Empleado.contOP);
 console.log(persona1.email);
 console.log(empleado1.email);
 // console.log(Persona.email); // undefined por ser un atributo no estatico
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.contOP);
