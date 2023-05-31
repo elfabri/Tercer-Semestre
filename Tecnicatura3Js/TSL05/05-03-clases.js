@@ -36,6 +36,14 @@ class Persona {
         // de tipo padre o hija
         return this.nombreCompleto();
     }
+
+    static saludar() {
+        console.log("Saludos desde este método static");
+    }
+
+    static saludar2(persona) {
+        console.log(persona.nombre);
+    }
 }
 
 class Empleado extends Persona {
@@ -78,3 +86,7 @@ console.log(empleado1);
 console.log(empleado1.nombreCompleto());
 console.log(empleado1.toString());
 console.log(persona1.toString());
+
+// persona1.saludar(); // un obj no puede acceder a un método static
+Persona.saludar();
+Persona.saludar2(persona1);
