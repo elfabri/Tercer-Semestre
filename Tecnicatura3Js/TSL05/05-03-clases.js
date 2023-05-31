@@ -4,9 +4,14 @@
                                              // a una clase antes de su definición
 
 class Persona {
+
+    static contOP = 0;
+
     constructor(nombre, apellido) {
         this._nombre = nombre;
         this._apellido = apellido;
+        Persona.contOP++;
+        console.log("Se incrementa el contador: " + Persona.contOP);
     }
 
     get nombre() {
@@ -93,3 +98,7 @@ Persona.saludar2(persona1);
 
 Empleado.saludar();
 Empleado.saludar2(empleado1);
+
+// console.log(persona1.contOP); // devuelve undefined a pesar de estar definido
+console.log(Persona.contOP);
+console.log(Empleado.contOP);
