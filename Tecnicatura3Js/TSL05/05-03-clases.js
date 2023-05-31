@@ -6,6 +6,7 @@
 class Persona {
 
     static contOP = 0;
+    email = "email-default";
 
     constructor(nombre, apellido) {
         this._nombre = nombre;
@@ -102,3 +103,7 @@ Empleado.saludar2(empleado1);
 // console.log(persona1.contOP); // devuelve undefined a pesar de estar definido
 console.log(Persona.contOP);
 console.log(Empleado.contOP);
+
+console.log(persona1.email);
+console.log(empleado1.email);
+// console.log(Persona.email); // undefined por ser un atributo no estatico
