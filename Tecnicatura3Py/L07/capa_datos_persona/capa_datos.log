@@ -32,3 +32,43 @@
 
 08:13:48 PM:DEBUG [conexion.py:26] Conexión exitosa: <connection object at 0x7fabdb371f80; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
 08:13:48 PM:DEBUG [conexion.py:39] Se abrió cursor <cursor object at 0x7fabdb3926b0; closed: 0>
+06:37:45 PM:DEBUG [conexion.py:26] Conexión exitosa: <connection object at 0x7fe272ec1f80; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+06:37:45 PM:DEBUG [conexion.py:39] Se abrió cursor <cursor object at 0x7fe272ede7a0; closed: 0>
+06:38:16 PM:DEBUG [conexion.py:26] Conexión exitosa: <connection object at 0x7f08a3581f80; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+06:38:16 PM:DEBUG [conexion.py:39] Se abrió cursor <cursor object at 0x7f08a359e7a0; closed: 0>
+06:38:16 PM:DEBUG [persona_dao.py:33] 
+            Id Persona: 1
+            Nombre: Juan Carlos
+            Apellido: Roldan
+            Email: j@asdf.com
+        
+06:38:16 PM:DEBUG [persona_dao.py:33] 
+            Id Persona: 2
+            Nombre: Ivonne
+            Apellido: Espere
+            Email: asdf@asd.asd
+        
+06:38:16 PM:DEBUG [persona_dao.py:33] 
+            Id Persona: 8
+            Nombre: María
+            Apellido: Esparta
+            Email: aaaa@asdf.com
+        
+06:38:16 PM:DEBUG [persona_dao.py:33] 
+            Id Persona: 10
+            Nombre: Marta
+            Apellido: Esparta
+            Email: abaa@asdf.com
+        
+06:38:16 PM:DEBUG [persona_dao.py:33] 
+            Id Persona: 11
+            Nombre: Jorge
+            Apellido: Prol
+            Email: jprol@asdf.com
+        
+06:38:16 PM:DEBUG [persona_dao.py:33] 
+            Id Persona: 12
+            Nombre: Alex
+            Apellido: Rojas
+            Email: js@asdf.com
+        

@@ -1,5 +1,6 @@
 from conexion import Conexion
 from Persona import Persona
+from logger_base import log
 
 
 class PersonaDAO:
@@ -18,8 +19,15 @@ class PersonaDAO:
         with Conexion.obtenerConexion():
             with Conexion.obtenerCursor() as cursor:
                 cursor.execute(cls._SELECCIONAR)
-                registros = cursor.fetchall
+                registros = cursor.fetchall()
                 personas = []
                 for r in registros:
                     p = Persona(r[0], r[1], r[2], r[3])
                     personas.append(p)
+                return personas
+
+
+if __name__ == "__main__":
+    personas = PersonaDAO.seleccionar()
+    for p in personas:
+        log.debug(p)
