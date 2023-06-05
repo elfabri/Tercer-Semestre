@@ -103,3 +103,41 @@
             Email: None
         
 07:25:19 PM:DEBUG [persona_dao.py:61] Personas eliminadas: 1
+07:31:32 PM:DEBUG [conexion.py:26] Conexión exitosa: <connection object at 0x7f7352d5e0c0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+07:31:32 PM:DEBUG [conexion.py:39] Se abrió cursor <cursor object at 0x7f7352d926b0; closed: 0>
+07:31:32 PM:DEBUG [persona_dao.py:76] 
+            Id Persona: 1
+            Nombre: Josefina
+            Apellido: Nopena
+            Email: asdff@sss.ddd
+        
+07:31:32 PM:DEBUG [persona_dao.py:76] 
+            Id Persona: 2
+            Nombre: Ivonne
+            Apellido: Espere
+            Email: asdf@asd.asd
+        
+07:31:32 PM:DEBUG [persona_dao.py:76] 
+            Id Persona: 8
+            Nombre: María
+            Apellido: Esparta
+            Email: aaaa@asdf.com
+        
+07:31:32 PM:DEBUG [persona_dao.py:76] 
+            Id Persona: 10
+            Nombre: Marta
+            Apellido: Esparta
+            Email: abaa@asdf.com
+        
+07:31:32 PM:DEBUG [persona_dao.py:76] 
+            Id Persona: 11
+            Nombre: Jorge
+            Apellido: Prol
+            Email: jprol@asdf.com
+        
+07:31:32 PM:DEBUG [persona_dao.py:76] 
+            Id Persona: 12
+            Nombre: Alex
+            Apellido: Rojas
+            Email: js@asdf.com
+        

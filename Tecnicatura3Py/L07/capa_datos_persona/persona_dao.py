@@ -56,9 +56,9 @@ class PersonaDAO:
 
 if __name__ == "__main__":
     # Eliminar
-    p1 = Persona(id_persona=13)
-    pe = PersonaDAO.eliminar(p1)
-    log.debug(f"Personas eliminadas: {pe}")
+    # p1 = Persona(id_persona=13)
+    # pe = PersonaDAO.eliminar(p1)
+    # log.debug(f"Personas eliminadas: {pe}")
 
     # Actualizar
     # p1 = Persona(1, "Josefina", "Nopena", "asdff@sss.ddd")
