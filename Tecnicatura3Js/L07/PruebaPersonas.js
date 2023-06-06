@@ -99,3 +99,10 @@ console.log(persona1.toString());
 
 let persona2 = new Persona("Carlita", "Ortelli", 24);
 console.log(persona2.toString());
+
+// Prueba Clase Empleado
+let empleado1 = new Empleado("Juana", "Perez", 28, 282828)
+console.log(empleado1.toString());
+
+let empleado2 = new Persona("Carlita", "Ortelli", 24, 928734);
+console.log(empleado2.toString());
