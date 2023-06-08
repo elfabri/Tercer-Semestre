@@ -39,12 +39,12 @@ public class CalculadoraUTN {
     private static void ejecutarOperacion(int ope, Scanner entrada) {
 
         System.out.print("Ingrese primer número: ");
-        var ope1 = Integer.parseInt(entrada.nextLine());
+        var ope1 = Double.parseDouble(entrada.nextLine());
 
         System.out.print("Ingrese segundo número: ");
-        var ope2 = Integer.parseInt(entrada.nextLine());
+        var ope2 = Double.parseDouble(entrada.nextLine());
 
-        int res;
+        double res;
         switch (ope) {
             case 1 -> {
                 res = ope1 + ope2;
