@@ -5,18 +5,7 @@ public class CalculadoraUTN {
         Scanner entrada = new Scanner(System.in);
 
         while (true) {
-
-            System.out.println("\n** App Calcu **");
-            // Mostramos menú
-            System.out.println("""
-                    1. Suma
-                    2. Resta
-                    3. Multiplicación
-                    4. División
-                    5. Salir
-                    """);
-            System.out.print("Operación a realizar? ");
-
+            mostrarMenu();
             try {
                 var ope = Integer.parseInt(entrada.nextLine());
 
@@ -57,5 +46,18 @@ public class CalculadoraUTN {
                 System.out.println("Ocurrió un error: " + e);
             }
         }
+    }
+
+    private static void mostrarMenu() {
+        System.out.println("\n** App Calcu **");
+        // Mostramos menú
+        System.out.println("""
+                1. Suma
+                2. Resta
+                3. Multiplicación
+                4. División
+                5. Salir
+                """);
+        System.out.print("Operación a realizar? ");
     }
 }
