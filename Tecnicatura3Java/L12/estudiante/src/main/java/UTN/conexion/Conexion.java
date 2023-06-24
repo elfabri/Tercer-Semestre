@@ -1,6 +1,8 @@
 package UTN.conexion;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Conexion {
 
@@ -12,9 +14,14 @@ public class Conexion {
         var usuario = "root";
         var password = "admin";
 
-        // Cargamos la clase del driver de mysql en memoria
-        Class.forName("com.mysql.cj.jdbc.Driver");
+        try {
+            // Cargamos la clase del driver de mysql en memoria
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
-        conexion = DirverManager.getConnection(url, usuario, password);
+            conexion = DirverManager.getConnection(url, usuario, password);
+        } catch (ClassNotFoundException | SQLException e) {
+            System.out.println("Ocurrió un error en la conexión: " + e.getMessage());
+        }
+        return conexion;
     }
 }
