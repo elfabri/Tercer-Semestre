@@ -9,7 +9,7 @@ class CursorDelPool:
 
     def __enter__(self):
         log.debug("Inicio del método with y __enter__")
-        self._conexion = Conexion.obtenerConexion
+        self._conexion = Conexion.obtenerConexion()
         self._cursor = self._conexion.cursor()
         return self._cursor
 
@@ -26,3 +26,10 @@ class CursorDelPool:
 
         self._cursor.close()
         Conexion.liberarConexion(self._conexion)
+
+
+if __name__ == "__main__":
+    with CursorDelPool() as cursor:
+        log.debug("Dentro del bloque with")
+        cursor.execute("SELECT * FROM persona")
+        log.debug(cursor.fetchall())

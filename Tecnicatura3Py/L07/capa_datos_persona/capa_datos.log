@@ -173,3 +173,19 @@
 04:30:25 PM:DEBUG [conexion.py:19] Conexión obtenida del pool: <connection object at 0x7f6fd7342480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
 04:30:25 PM:DEBUG [conexion.py:19] Conexión obtenida del pool: <connection object at 0x7f6fd71f91c0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
 04:30:25 PM:DEBUG [conexion.py:19] Conexión obtenida del pool: <connection object at 0x7f6fd71f9300; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+04:56:18 PM:DEBUG [cursor_del_pool.py:11] Inicio del método with y __enter__
+04:57:04 PM:DEBUG [cursor_del_pool.py:11] Inicio del método with y __enter__
+04:57:04 PM:DEBUG [conexion.py:37] Creación de pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x7f7e26c5a250>
+04:57:04 PM:DEBUG [conexion.py:19] Conexión obtenida del pool: <connection object at 0x7f7e2769a0c0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+04:57:04 PM:DEBUG [cursor_del_pool.py:33] Dentro del bloque with
+04:57:04 PM:DEBUG [cursor_del_pool.py:17] Se ejecuta el método exit
+04:57:04 PM:DEBUG [cursor_del_pool.py:21] Ocurrió un error: 'psycopg2.extensions.cursor' object has no attribute 'excecute'
+04:57:04 PM:DEBUG [conexion.py:48] Regresamos la conexión del pool: <connection object at 0x7f7e2769a0c0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+04:57:22 PM:DEBUG [cursor_del_pool.py:11] Inicio del método with y __enter__
+04:57:22 PM:DEBUG [conexion.py:37] Creación de pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x7f541c67e790>
+04:57:22 PM:DEBUG [conexion.py:19] Conexión obtenida del pool: <connection object at 0x7f541c79e0c0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+04:57:22 PM:DEBUG [cursor_del_pool.py:33] Dentro del bloque with
+04:57:22 PM:DEBUG [cursor_del_pool.py:35] [(2, 'Ivonne', 'Espere', 'asdf@asd.asd'), (8, 'María', 'Esparta', 'aaaa@asdf.com'), (10, 'Marta', 'Esparta', 'abaa@asdf.com'), (11, 'Jorge', 'Prol', 'jprol@asdf.com'), (12, 'Alex', 'Rojas', 'js@asdf.com'), (1, 'Josefina', 'Nopena', 'asdff@sss.ddd')]
+04:57:22 PM:DEBUG [cursor_del_pool.py:17] Se ejecuta el método exit
+04:57:22 PM:DEBUG [cursor_del_pool.py:25] Commit de la transacción
+04:57:22 PM:DEBUG [conexion.py:48] Regresamos la conexión del pool: <connection object at 0x7f541c79e0c0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
