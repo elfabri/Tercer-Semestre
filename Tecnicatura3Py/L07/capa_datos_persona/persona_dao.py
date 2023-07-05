@@ -53,17 +53,17 @@ class PersonaDAO:
 
 if __name__ == "__main__":
     # Eliminar
-    # p1 = Persona(id_persona=13)
-    # pe = PersonaDAO.eliminar(p1)
-    # log.debug(f"Personas eliminadas: {pe}")
+    p1 = Persona(id_persona=12)
+    pe = PersonaDAO.eliminar(p1)
+    log.debug(f"Personas eliminadas: {pe}")
 
     # Actualizar
-    # p1 = Persona(1, "Josefina", "Nopena", "asdff@sss.ddd")
-    # pa = PersonaDAO.actualizar(p1)
-    # log.debug(f"Personas actualizadas: {pa}")
+    p1 = Persona(1, "Josefina", "Nopenaxd", "Asdff@sss.ddd")
+    pa = PersonaDAO.actualizar(p1)
+    log.debug(f"Personas actualizadas: {pa}")
 
     # Insertar
-    p1 = Persona(nombre="Marcas", apellido="Lul", email="ghjk@fdsa.asd")
+    p1 = Persona(nombre="Mateo", apellido="Omg", email="jklñ@fdsa.asd")
     personas_insertadas = PersonaDAO.insertar(p1)
     log.debug(f"Personas insertadas: {personas_insertadas}")
 
