@@ -1,12 +1,13 @@
 package UTN.datos;
 
 import static UTN.conexion.Conexion.getConnection;
+import UTN.dominio.Estudiante;
+
 import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import UTN.dominio.Estudiante;
 
 public class EstudianteDao {
     // Método listar
@@ -19,6 +20,18 @@ public class EstudianteDao {
 
         // Creamos objeto de tipo conexión
         Connection con = getConnection();
-        String sql = "SELECT * FROM estudiantes2022;";
+        String sql = "SELECT * FROM estudiantes ORDER BY idestudiantes2022;";
+        try {
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                var estudiante = new Estudiante();
+                estudiante.setIdEstudiante(rs.getInt("idestudiante2022"));
+            }
+        } catch (Exception e) {
+            System.out.println("Ocurrió un error al seleccionar datos: " + e.getMessage());
+        } finally {
+
+        }
     }
 }
