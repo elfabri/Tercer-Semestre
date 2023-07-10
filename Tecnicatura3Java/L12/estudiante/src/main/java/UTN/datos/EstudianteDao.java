@@ -119,6 +119,38 @@ public class EstudianteDao {
         return false;
     }
 
+    public boolean modificarEst(Estudiante est) {
+        PreparedStatement ps;
+        Connection con = getConnection();
+
+        String sql = "UPDATE estudiantes2022 SET nombre=?, apellido=?, telefono=?, email=? WHERE idestudiantes2022=?";
+        
+        try {
+            ps = con.prepareStatement(sql);
+
+            ps.setString(1, est.getNombre());
+            ps.setString(2, est.getApellido());
+            ps.setString(3, est.getTelefono());
+            ps.setString(4, est.getEmail());
+            ps.setInt(5, est.getIdEstudiante());
+
+            ps.execute();
+            return true;
+
+        } catch (Exception e) {
+            System.out.println("Ocurrió un error al modificar estudiante: " + e.getMessage());
+
+        } finally {
+            try {
+                con.close();
+
+            } catch (Exception e) {
+                System.out.println("Ocurrió un error al cerrar conexión: " + e.getMessage());
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         // Listar los estudiantes
         var estudianteDao = new EstudianteDao();
@@ -139,7 +171,7 @@ public class EstudianteDao {
         }
         */
 
-        // Agregar Estudiante
+        /* Agregar Estudiante
         var est2 = new Estudiante("Carlas", "Lol", "12346969", "cjasdñ@gmuil.cum");
         
         var agregado = estudianteDao.agregarEst(est2);
@@ -149,6 +181,7 @@ public class EstudianteDao {
         } else {
             System.out.println("No se ha agregado estudiante: " + est2);
         }
+        */
 
     }
 }
