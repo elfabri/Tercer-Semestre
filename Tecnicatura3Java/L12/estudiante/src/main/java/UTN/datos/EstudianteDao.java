@@ -152,12 +152,7 @@ public class EstudianteDao {
     }
 
     public static void main(String[] args) {
-        // Listar los estudiantes
         var estudianteDao = new EstudianteDao();
-
-        System.out.println("Listado de estudiantes:");
-        List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
-        estudiantes.forEach(System.out::println); // Función lambda para imprimir
 
         /* Buscar por id
         var est1 = new Estudiante(1);
@@ -183,5 +178,19 @@ public class EstudianteDao {
         }
         */
 
+        // Modificar Estudiante
+        var eM = new Estudiante(1, "Juanita", "Null", "1000101", "fdas@asdf.qwe");
+        var modificado = estudianteDao.modificarEst(eM);
+
+        if (modificado) {
+            System.out.println("Estudiante modificado: " + eM);
+        } else {
+            System.out.println("No se modificó el estudiante" + eM);
+        }
+
+        // Listar los estudiantes
+        System.out.println("Listado de estudiantes:");
+        List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
+        estudiantes.forEach(System.out::println); // Función lambda para imprimir
     }
 }
