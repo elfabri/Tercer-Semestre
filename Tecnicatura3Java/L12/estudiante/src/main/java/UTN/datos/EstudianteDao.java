@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class EstudianteDao {
     // Método listar
-    public List<Estudiante> listar() {
+    public List<Estudiante> listarEstudiantes() {
         List<Estudiante> estudiantes = new ArrayList<>();
 
         // Creamos algunos objetos necesarios para comunicarnos con la base de datos 
@@ -50,5 +50,14 @@ public class EstudianteDao {
         }
 
         return estudiantes;
+    }
+
+    public static void main(String[] args) {
+        // Listar los estudiantes
+        var estudianteDao = new EstudianteDao();
+
+        System.out.println("Listado de estudiantes:");
+        List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
+        estudiantes.forEach(System.out::println); // Función lambda para imprimir
     }
 }
