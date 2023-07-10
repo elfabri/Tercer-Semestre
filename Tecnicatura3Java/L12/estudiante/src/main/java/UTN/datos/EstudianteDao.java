@@ -89,6 +89,26 @@ public class EstudianteDao {
         return false;
     }
 
+    public boolean agregarEst(Estudiante est) {
+        PreparedStatement ps;
+        ResultSet rs;
+        Connection con = getConnection();
+
+        String sql = "INSERT INTO estudiantes2022 (nombre, apellido, telefono, email) VALUES (?, ?, ?, ?)";
+
+        try {
+            ps = con.prepareStatement(sql);
+
+            ps.setString(1, est.getNombre());
+            ps.setString(2, est.getApellido());
+            ps.setString(3, est.getTelefono());
+            ps.setString(4, est.getEmail());
+
+        } catch (Exception e) {
+            System.out.println("Ocurrió un error al agregar estudiante: " + e.getMessage());
+        }
+    }
+
     public static void main(String[] args) {
         // Listar los estudiantes
         var estudianteDao = new EstudianteDao();
