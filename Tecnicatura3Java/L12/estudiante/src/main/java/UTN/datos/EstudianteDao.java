@@ -91,7 +91,6 @@ public class EstudianteDao {
 
     public boolean agregarEst(Estudiante est) {
         PreparedStatement ps;
-        ResultSet rs;
         Connection con = getConnection();
 
         String sql = "INSERT INTO estudiantes2022 (nombre, apellido, telefono, email) VALUES (?, ?, ?, ?)";
@@ -104,9 +103,20 @@ public class EstudianteDao {
             ps.setString(3, est.getTelefono());
             ps.setString(4, est.getEmail());
 
+            ps.execute();
+            return true;
+
         } catch (Exception e) {
             System.out.println("Ocurrió un error al agregar estudiante: " + e.getMessage());
+        } finally {
+            try {
+                con.close();
+
+            } catch (Exception e) {
+                System.out.println("Ocurrió un error al cerrar conexión: " + e.getMessage());
+            }
         }
+        return false;
     }
 
     public static void main(String[] args) {
