@@ -12,3 +12,5 @@
 /Tecnicatura3Java/*/*/target/maven-status/*
 /Tecnicatura3Java/*/*/target/test-classes/*
 /Tecnicatura3Java/*/*/src/test/*
+
+/.idea/*
